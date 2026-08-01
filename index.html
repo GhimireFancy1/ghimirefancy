@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghimire Fancy & Baby Collection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">GHIMIRE</span>
+      <span class="brand-sub">Fancy &amp; Baby Collection</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <p class="eyebrow">Ladies &nbsp;·&nbsp; Mens &nbsp;·&nbsp; Baby</p>
+    <h1>GHIMIRE<br><span>Fancy &amp; Baby Collection</span></h1>
+    <div class="stitch-line" aria-hidden="true"></div>
+    <p class="hero-text">Every garment, every age, every size — made to fit your family.<br>Browse what's in store and enquire directly with us.</p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-primary">Browse Collection</a>
+      <a href="tel:+9779845066635" class="btn btn-outline">Call Now</a>
+    </div>
+  </section>
+
+  <div class="stitch-line wide" aria-hidden="true"></div>
+
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+    <div class="shop-head">
+      <h2>What's in Store</h2>
+      <p class="section-note">Tap any item to see available ages, sizes, and custom-fit options.</p>
+    </div>
+
+    <div class="shop-controls">
+      <div class="category-tabs" id="categoryTabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="ladies">Ladies Wear</button>
+        <button class="tab" data-filter="mens">Mens Wear</button>
+        <button class="tab" data-filter="baby">Baby Wear</button>
+      </div>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search an item…" aria-label="Search products">
+      </div>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>No items match your search. Try another word or category.</p>
+  </section>
+
+  <div class="stitch-line wide" aria-hidden="true"></div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <h2>About the Shop</h2>
+      <p>Ghimire Fancy &amp; Baby Collection is a family-run garment shop stocking ready wear for ladies, gents and little ones — from everyday basics to special-occasion outfits. Sizes run from the smallest newborn wear to full adult sizing, and every piece can be tailored or ordered in a custom size on request.</p>
+      <p class="proprietor">Proprietor: <strong>Trilochan Ghimire</strong></p>
+    </div>
+  </section>
+
+  <div class="stitch-line wide" aria-hidden="true"></div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Visit or Contact Us</h2>
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="contact-label">Proprietor</span>
+        <span class="contact-value">Trilochan Ghimire</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">9845066635</span>
+      </div>
+      <div class="contact-actions">
+        <a href="tel:+9779845066635" class="btn btn-primary">Call 9845066635</a>
+        <a href="https://wa.me/9779845066635" target="_blank" rel="noopener" class="btn btn-outline">Message on WhatsApp</a>
+      </div>
+      <p class="contact-note">Have a size or age in mind that isn't listed? Call or message us — most items can be arranged to fit.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Ghimire Fancy &amp; Baby Collection — Proprietor Trilochan Ghimire</p>
+  <p class="fine-print">This page is for information only. Please call <a href="tel:+9779845066635">9845066635</a> to check availability and place an order.</p>
+  <p class="fine-print" id="yearLine"></p>
+</footer>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
