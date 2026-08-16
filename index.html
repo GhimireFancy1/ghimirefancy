@@ -3,119 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghimire Fancy & Baby Collection</title>
+<title>Ghimire Fancy &amp; Baby Collection — Ladies, Mens &amp; Baby Wear</title>
+<meta name="description" content="Ghimire Fancy & Baby Collection — a family-run garment shop stocking ready wear for ladies, gents and little ones. Call or WhatsApp to enquire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
+<!-- Utility ticker -->
+<div class="utility-bar">
+  <div class="utility-track">
+    <span>ORDER BY PHONE OR WHATSAPP — GET 14.99% OFF THE MARKED PRICE</span>
+    <span>ORDER BY PHONE OR WHATSAPP — GET 14.99% OFF THE MARKED PRICE</span>
+    <span>ORDER BY PHONE OR WHATSAPP — GET 14.99% OFF THE MARKED PRICE</span>
+    <span>ORDER BY PHONE OR WHATSAPP — GET 14.99% OFF THE MARKED PRICE</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="#home" class="brand">
-      <span class="brand-mark">GHIMIRE</span>
-      <span class="brand-sub">Fancy &amp; Baby Collection</span>
+    <a href="#home" class="wordmark">
+      <span class="wordmark-main">GHIMIRE</span>
+      <span class="wordmark-sub">Fancy &amp; Baby Collection</span>
     </a>
+
     <nav class="main-nav" id="mainNav">
       <a href="#home">Home</a>
       <a href="#shop">Shop</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="tel:+9779845221970" class="nav-call">Call 9845221970</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
-<div class="promo-banner">
-  <p>Order through a phone call or WhatsApp enquiry and get <strong>14.99% off</strong> the marked price — online enquiry only.</p>
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="https://images.pexels.com/photos/20635528/pexels-photo-20635528.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Model in a crop top and baggy jeans, street style portrait" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Parsa · Ladies · Mens · Baby</p>
+    <h1>Every garment,<br>every age,<br><em>every family.</em></h1>
+    <p class="hero-lede">A family-run shop stocking ready wear for ladies, gents and little ones — from everyday basics to special-occasion pieces, tailored to fit on request.</p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-light">Browse the Collection</a>
+      <a href="tel:+9779845221970" class="btn btn-outline">Call Now — 9845221970</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll<span></span></div>
+</section>
+
+<!-- Ticker band -->
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span>LADIES WEAR</span><span class="dot">●</span>
+    <span>MENS WEAR</span><span class="dot">●</span>
+    <span>BABY WEAR</span><span class="dot">●</span>
+    <span>CUSTOM SIZING</span><span class="dot">●</span>
+    <span>LADIES WEAR</span><span class="dot">●</span>
+    <span>MENS WEAR</span><span class="dot">●</span>
+    <span>BABY WEAR</span><span class="dot">●</span>
+    <span>CUSTOM SIZING</span><span class="dot">●</span>
+  </div>
 </div>
 
-<main>
+<!-- Shop -->
+<section class="shop" id="shop">
+  <div class="section-head">
+    <p class="eyebrow">What's in Store</p>
+    <h2>The Look Book</h2>
+    <p class="section-note">Tap any piece to see the style in detail. Photos here are style references sourced online to show the kind of garment on offer — not a live photo of shop stock. Call or message to confirm what's actually on the shelf today.</p>
+  </div>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
-    <p class="eyebrow">Ladies &nbsp;·&nbsp; Mens &nbsp;·&nbsp; Baby</p>
-    <h1>GHIMIRE<br><span>Fancy &amp; Baby Collection</span></h1>
-    <div class="stitch-line" aria-hidden="true"></div>
-    <p class="hero-text">Every garment, every age, every size — made to fit your family.<br>Browse what's in store and enquire directly with us.</p>
-    <div class="hero-actions">
-      <a href="#shop" class="btn btn-primary">Browse Collection</a>
-      <a href="tel:+9779845221970" class="btn btn-outline">Call Now</a>
+  <div class="filter-row" id="filterRow">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ladies">Ladies Wear</button>
+    <button class="filter-btn" data-filter="mens">Mens Wear</button>
+    <button class="filter-btn" data-filter="baby">Baby Wear</button>
+  </div>
+
+  <div class="grid" id="grid"><!-- populated by script.js --></div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-media">
+    <img src="https://images.pexels.com/photos/19171630/pexels-photo-19171630.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman in a white shirt and slim jeans, casual portrait" loading="lazy">
+  </div>
+  <div class="about-content">
+    <p class="eyebrow">About the Shop</p>
+    <h2>Ready wear for<br>every stage of life.</h2>
+    <p>Ghimire Fancy &amp; Baby Collection is a family-run garment shop stocking ready wear for ladies, gents and little ones — from everyday basics to special-occasion outfits.</p>
+    <p>Sizes run from the smallest newborn wear to full adult sizing, and every piece can be tailored or ordered in a custom size on request.</p>
+    <div class="proprietor">
+      <span class="proprietor-label">Proprietor</span>
+      <span class="proprietor-name">Trilochan Ghimire</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <div class="stitch-line wide" aria-hidden="true"></div>
-
-  <!-- SHOP -->
-  <section class="shop" id="shop">
-    <div class="shop-head">
-      <h2>What's in Store</h2>
-      <p class="section-note">Tap any item to see full details, available ages, sizes, and custom-fit options.<br><span class="section-subnote">Images shown are illustrative references, not exact stock photos — please call to confirm current styles in shop.</span></p>
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="eyebrow eyebrow-light">Visit or Contact Us</p>
+    <h2>Have a size or age<br>in mind? Just call.</h2>
+    <p class="contact-note">Most items can be arranged to fit — even if it isn't listed. Reach Trilochan Ghimire directly by phone or WhatsApp.</p>
+    <div class="contact-actions">
+      <a href="tel:+9779845221970" class="btn btn-light">Call 9845221970</a>
+      <a href="https://wa.me/9779845221970" target="_blank" rel="noopener" class="btn btn-outline-light">Message on WhatsApp</a>
     </div>
+  </div>
+</section>
 
-    <div class="shop-controls">
-      <div class="category-tabs" id="categoryTabs">
-        <button class="tab active" data-filter="all">All</button>
-        <button class="tab" data-filter="ladies">Ladies Wear</button>
-        <button class="tab" data-filter="mens">Mens Wear</button>
-        <button class="tab" data-filter="baby">Baby Wear</button>
-      </div>
-      <div class="search-wrap">
-        <input type="text" id="searchInput" placeholder="Search an item…" aria-label="Search products">
-      </div>
-    </div>
-
-    <div class="product-grid" id="productGrid"></div>
-    <p class="empty-state" id="emptyState" hidden>No items match your search. Try another word or category.</p>
-  </section>
-
-  <div class="stitch-line wide" aria-hidden="true"></div>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-inner">
-      <h2>About the Shop</h2>
-      <p>Ghimire Fancy &amp; Baby Collection is a family-run garment shop stocking ready wear for ladies, gents and little ones — from everyday basics to special-occasion outfits. Sizes run from the smallest newborn wear to full adult sizing, and every piece can be tailored or ordered in a custom size on request.</p>
-      <p class="proprietor">Proprietor: <strong>Trilochan Ghimire</strong></p>
-    </div>
-  </section>
-
-  <div class="stitch-line wide" aria-hidden="true"></div>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Visit or Contact Us</h2>
-    <div class="contact-card">
-      <div class="contact-row">
-        <span class="contact-label">Proprietor</span>
-        <span class="contact-value">Trilochan Ghimire</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Phone</span>
-        <span class="contact-value">9845221970</span>
-      </div>
-      <div class="contact-actions">
-        <a href="tel:+9779845221970" class="btn btn-primary">Call 9845221970</a>
-        <a href="https://wa.me/9779845221970" target="_blank" rel="noopener" class="btn btn-outline">Message on WhatsApp</a>
-      </div>
-      <p class="contact-note">Have a size or age in mind that isn't listed? Call or message us — most items can be arranged to fit.</p>
-    </div>
-  </section>
-
-</main>
-
+<!-- Footer -->
 <footer class="site-footer">
   <p>Ghimire Fancy &amp; Baby Collection — Proprietor Trilochan Ghimire</p>
-  <p class="fine-print">This page is for information only. Please call <a href="tel:+9779845221970">9845221970</a> to check availability and place an order.</p>
-  <p class="fine-print" id="yearLine"></p>
+  <p class="footer-fine">This page is for information only. Please call <a href="tel:+9779845221970">9845221970</a> to check availability and place an order.</p>
 </footer>
 
-<!-- PRODUCT DETAIL MODAL -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-    <div id="modalBody"></div>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-box">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+    <div class="lightbox-media">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox-info">
+      <p class="eyebrow" id="lightboxCategory"></p>
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDesc"></p>
+      <p class="lightbox-disclaimer">Reference image only — please call to confirm current styles, ages, sizes and price in shop.</p>
+      <div class="lightbox-actions">
+        <a href="tel:+9779845221970" class="btn btn-dark">Call to Enquire</a>
+        <a href="https://wa.me/9779845221970" target="_blank" rel="noopener" class="btn btn-outline-dark">WhatsApp</a>
+      </div>
+    </div>
   </div>
 </div>
 
